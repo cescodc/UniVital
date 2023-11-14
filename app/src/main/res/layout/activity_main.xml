@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#1c1f21"
+    android:orientation="vertical">
+
 
     <!-- Barra de título -->
     <TextView
@@ -14,7 +16,7 @@
         android:text="UniVital"
         android:textSize="24sp"
         android:textStyle="bold"
-        android:background="#3498db"
+        android:background="#003b5c"
         android:textColor="#ffffff"
         android:padding="16dp"/>
 
@@ -30,10 +32,11 @@
         android:gravity="center">
 
         <ImageView
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="169dp"
+            android:layout_height="154dp"
             android:layout_gravity="center"
-            android:src="@drawable/actividad_fisica_icon" />
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/actividad_fisica" />
 
         <Button
             android:id="@+id/btnPhysicalActivity"
@@ -49,7 +52,8 @@
         android:orientation="horizontal"
         android:layout_below="@id/layoutPhysicalActivity"
         android:layout_marginTop="16dp"
-        android:layout_marginHorizontal="16dp">
+        android:layout_marginHorizontal="16dp"
+        android:baselineAligned="false">
 
         <!-- Botón "Seguimiento de la Dieta" -->
         <LinearLayout
@@ -57,13 +61,16 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
+            android:padding="2dp"
             android:orientation="vertical">
 
+
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
                 android:layout_gravity="center"
-                android:src="@drawable/dieta_icon" />
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/dieta" />
 
             <Button
                 android:id="@+id/btnDietTracking"
@@ -72,10 +79,11 @@
                 android:text="Seguimiento de la Dieta" />
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
                 android:layout_gravity="center"
-                android:src="@drawable/dieta_icon" />
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/recordatorios" />
 
             <Button
                 android:id="@+id/btnNotifications"
@@ -90,13 +98,15 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
+            android:padding="2dp"
             android:orientation="vertical">
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
                 android:layout_gravity="center"
-                android:src="@drawable/meditacion_icon" />
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/meditacion" />
 
             <Button
                 android:id="@+id/btnMeditation"
@@ -105,10 +115,11 @@
                 android:text="Meditación y Bienestar Emocional" />
 
             <ImageView
-                android:layout_width="80dp"
-                android:layout_height="80dp"
+                android:layout_width="100dp"
+                android:layout_height="180dp"
                 android:layout_gravity="center"
-                android:src="@drawable/dieta_icon" />
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/informe" />
 
             <Button
                 android:id="@+id/btnEstadistic"
