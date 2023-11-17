@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
         btnMeditation.setOnClickListener {
             // Lógica para abrir la pantalla de meditación y bienestar emocional
-            //startActivity(Intent(this, MeditationActivity::class.java))
+            startActivity(Intent(this, ActivityMeditacion::class.java))
         }
 
         btnNotifications.setOnClickListener {

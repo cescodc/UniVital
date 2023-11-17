@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">UniVital</string>
+    <string name="title_Screen2">Emociones</string>
+    <string name="screen2_subtitle">¿Cómo te sentiste hoy?</string>
+    <string name="screen2_subtitle2">Meditación</string>
+    <string name="fecha_dd_mm_yyyy">Fecha: DD/MM/YYYY</string>
+    <string name="todo_tasks">Tareas:</string>
 </resources>
