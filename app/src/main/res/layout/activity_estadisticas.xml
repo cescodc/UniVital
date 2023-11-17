@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1c1f21"
@@ -24,9 +28,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvTitle"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
-
-        app:cardCornerRadius="8dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="18dp"
         app:cardElevation="4dp">
 
         <LinearLayout
@@ -39,21 +45,23 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Estadísticas de Sueño"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
+
             <ImageView
-                android:layout_width="120dp"
-                android:layout_height="165dp"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
                 android:layout_gravity="center"
                 android:contentDescription="@string/app_name"
-                android:src="@drawable/recordatorios" />
+                android:src="@drawable/sueno" />
 
             <TextView
                 android:id="@+id/tvSleepStats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="8 horas de sueño"
+                android:text="6 horas de sueño"
+                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:textColor="#000000"/>
@@ -67,7 +75,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/cardSleep"
         android:layout_marginTop="16dp"
-        app:cardCornerRadius="8dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="18dp"
         app:cardElevation="4dp">
 
         <LinearLayout
@@ -80,16 +89,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Estadísticas de Ritmo Cardíaco"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ritmo" />
 
             <TextView
                 android:id="@+id/tvHeartRateStats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="75 pulsaciones por minuto"
+                android:textAlignment="center"
+                android:text="81 ppm "
                 android:textSize="16sp"
+                android:textStyle="bold"
                 android:textColor="#000000"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -100,8 +117,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/cardHeartRate"
+        android:layout_margin="10dp"
         android:layout_marginTop="16dp"
-        app:cardCornerRadius="8dp"
+        app:cardCornerRadius="18dp"
         app:cardElevation="4dp">
 
         <LinearLayout
@@ -114,18 +132,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Estadísticas de Pasos"
-                android:textSize="18sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 android:textColor="#000000"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/pasos" />
 
             <TextView
                 android:id="@+id/tvStepsStats"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="10,000 pasos hoy"
+                android:text="15,450 pasos"
+                android:textStyle="bold"
                 android:textSize="16sp"
+                android:textAlignment="center"
                 android:textColor="#000000"/>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
+</ScrollView>
