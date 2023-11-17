@@ -119,15 +119,15 @@
                 android:id="@+id/playButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Iniciar meditación"
-                android:layout_marginTop="65dp" />
+                android:text="Iniciar meditacion de cero"
+                android:layout_marginTop="45dp" />
 
             <Button
                 android:id="@+id/stopButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="65dp"
+                android:layout_marginTop="45dp"
                 android:text="Pausar / Reaunudar" />
 
         </LinearLayout>
