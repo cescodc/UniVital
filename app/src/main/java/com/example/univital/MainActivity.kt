@@ -4,6 +4,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.cardview.widget.CardView
+import com.example.univital.R
 
 class MainActivity : AppCompatActivity() {
 
@@ -39,7 +41,7 @@ class MainActivity : AppCompatActivity() {
 
         btnStatistics.setOnClickListener {
             // Lógica para abrir la pantalla de estadísticas e informes
-            //startActivity(Intent(this, StatisticsActivity::class.java))
+            startActivity(Intent(this, Estadisticas::class.java))
         }
     }
 }

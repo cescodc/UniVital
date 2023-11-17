@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1c1f21"
     android:orientation="vertical">
-
 
     <!-- Barra de título -->
     <TextView
@@ -20,117 +18,150 @@
         android:textColor="#ffffff"
         android:padding="16dp"/>
 
-    <!-- Botón "Registro de Actividad Física" con imagen centrada -->
-    <LinearLayout
-        android:id="@+id/layoutPhysicalActivity"
+    <!-- Botón "Registro de Actividad Física" con CardView -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPhysicalActivity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tvTitle"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
+        app:cardCornerRadius="28dp"
+        app:cardElevation="10dp">
 
-        android:gravity="center">
-
-        <ImageView
-            android:layout_width="169dp"
-            android:layout_height="115dp"
-            android:layout_gravity="center"
-            android:contentDescription="@string/app_name"
-            android:src="@drawable/actividad_fisica" />
-
-        <Button
-            android:id="@+id/btnPhysicalActivity"
+        <LinearLayout
+            android:id="@+id/layoutPhysicalActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Registro de Actividad Física" />
-    </LinearLayout>
+            android:gravity="center"
+            android:orientation="vertical">
 
-    <!-- Sección de 2 columnas con imágenes y títulos -->
+            <ImageView
+                android:layout_width="169dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/actividad_fisica" />
+
+            <Button
+                android:id="@+id/btnPhysicalActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de Actividad Física" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Sección de 2 columnas con imágenes y títulos dentro de CardViews -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/layoutPhysicalActivity"
+        android:layout_below="@id/cardPhysicalActivity"
         android:layout_marginTop="16dp"
         android:layout_marginHorizontal="16dp"
         android:baselineAligned="false">
 
-        <!-- Botón "Seguimiento de la Dieta" -->
-        <LinearLayout
+        <!-- CardView para "Seguimiento de la Dieta" -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDietTracking"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center"
-            android:padding="2dp"
-            android:orientation="vertical">
+            app:cardBackgroundColor="#ffffff"
+            app:cardCornerRadius="38dp"
+            app:cardElevation="8dp">
 
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="165dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/dieta" />
-
-            <Button
-                android:id="@+id/btnDietTracking"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Seguimiento de la Dieta" />
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
 
-            <ImageView
-                android:layout_width="120dp"
-                android:layout_height="165dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/recordatorios" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/dieta" />
 
-            <Button
-                android:id="@+id/btnNotifications"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Notificaciones y Recordatorios" />
-        </LinearLayout>
+                <Button
+                    android:id="@+id/btnDietTracking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seguimiento de la Dieta" />
 
-        <!-- Botón "Meditación y Bienestar Emocional" -->
-        <LinearLayout
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/recordatorios" />
+
+                <Button
+                    android:id="@+id/btnNotifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notificaciones y Recordatorios" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView para "Meditación y Bienestar Emocional" -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardMeditation"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
-            android:padding="2dp"
-            android:orientation="vertical">
+            app:cardCornerRadius="38dp"
+            app:cardElevation="8dp">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="165dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/meditacion" />
 
-            <Button
-                android:id="@+id/btnMeditation"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Meditación y Bienestar Emocional" />
+                android:gravity="center"
+                android:padding="5dp"
+                android:orientation="vertical">
 
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="165dp"
-                android:layout_gravity="center"
-                android:contentDescription="@string/app_name"
-                android:src="@drawable/informe" />
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/meditacion" />
 
-            <Button
-                android:id="@+id/btnEstadistic"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Estadísticas e Informes" />
-        </LinearLayout>
+                <Button
+                    android:id="@+id/btnMeditation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Meditación y Bienestar Emocional" />
 
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="165dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/informe" />
+
+                <Button
+                    android:id="@+id/btnEstadistic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estadísticas e Informes" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
-
-
-
 </RelativeLayout>
+
+
+
+
+
+
+
+
+
 
