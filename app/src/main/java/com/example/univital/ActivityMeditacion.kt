@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 class ActivityMeditacion : AppCompatActivity() {
 
     private var mediaPlayer: MediaPlayer? = null
+    private var isPaused: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,16 +45,20 @@ class ActivityMeditacion : AppCompatActivity() {
 
         // Configura el listener del botón de detención
         stopButton.setOnClickListener {
-            stopSound()
+            pauseOrStopSound()
         }
     }
 
-    private fun stopSound() {
-        // Detén la reproducción del sonido si está en curso
+    private fun pauseOrStopSound() {
+        // Pausa la reproducción si está en curso, o detén si ya está pausado
         mediaPlayer?.apply {
             if (isPlaying) {
-                stop()
-                reset()
+                pause()
+                isPaused = true
+            } else if (isPaused) {
+                // Si ya está pausado, reanuda la reproducción
+                start()
+                isPaused = false
             }
         }
     }

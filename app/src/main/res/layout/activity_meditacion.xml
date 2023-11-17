@@ -12,6 +12,19 @@
         android:background="#498ACF"
         android:orientation="vertical">
 
+        <!-- Barra de título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UniVital"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:background="#003b5c"
+            android:textColor="#ffffff"
+            android:padding="16dp"/>
+
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -71,7 +84,7 @@
             android:text="Realizar meditacion guiada"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="35dp"/>
 
         <!-- CheckBox 2 -->
@@ -82,7 +95,7 @@
             android:text="Agregar mi emoción del día"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="35dp"/>
 
         <!-- CheckBox 3 -->
@@ -93,28 +106,29 @@
             android:text="Caminar en la naturaleza"
             android:textColor="@color/white"
             android:textSize="18sp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:layout_marginStart="35dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
             <Button
                 android:id="@+id/playButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Play"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="35dp"/>
+                android:text="Iniciar meditación"
+                android:layout_marginTop="65dp" />
 
             <Button
                 android:id="@+id/stopButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Stop"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="35dp"/>
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="65dp"
+                android:text="Pausar / Reaunudar" />
 
         </LinearLayout>
 
