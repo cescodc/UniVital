@@ -36,7 +36,7 @@ class MainActivity : AppCompatActivity() {
 
         btnNotifications.setOnClickListener {
             // Lógica para abrir la pantalla de notificaciones y recordatorios
-            //startActivity(Intent(this, NotificationsActivity::class.java))
+            startActivity(Intent(this, ActivityNotificacion::class.java))
         }
 
         btnStatistics.setOnClickListener {
