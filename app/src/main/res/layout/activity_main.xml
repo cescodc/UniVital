@@ -73,7 +73,6 @@
             android:layout_weight="1"
             android:gravity="center"
             android:layout_margin="5dp"
-            app:cardBackgroundColor="#ffffff"
             app:cardCornerRadius="18dp"
             app:cardElevation="8dp">
 
@@ -89,6 +88,7 @@
                     android:layout_height="165dp"
                     android:layout_gravity="center"
                     android:contentDescription="@string/app_name"
+                    android:background="#ffffff"
                     android:src="@drawable/dieta" />
 
                 <Button

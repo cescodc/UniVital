@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
 
         btnDietTracking.setOnClickListener {
             // Lógica para abrir la pantalla de seguimiento de la dieta
-           // startActivity(Intent(this, DietTrackingActivity::class.java))
+            startActivity(Intent(this, SeguimientoDieta::class.java))
         }
 
         btnMeditation.setOnClickListener {
