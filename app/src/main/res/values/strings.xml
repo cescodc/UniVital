@@ -5,4 +5,5 @@
     <string name="screen2_subtitle2">Meditación</string>
     <string name="fecha_dd_mm_yyyy">Fecha: DD/MM/YYYY</string>
     <string name="todo_tasks">Tareas:</string>
+    <string name="notificaciones">Notificaciones</string>
 </resources>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_notificaciones">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#1c1f21">
+
+            <!-- Barra de título -->
+            <TextView
+                android:id="@+id/titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#003b5c"
+                android:padding="16dp"
+                android:text="UniVital "
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- CardView para Estadísticas de Sueño -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSleep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titulo"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="4dp">
+
+                <LinearLayout
+                    android:id="@+id/layoutNotificaciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginVertical="35dp"
+                        android:text="@string/notificaciones"
+                        android:textColor="@color/black"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/switch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:checked="false"
+                        android:text="Habilitar Notificaciones Flotantes"
+                        android:textSize="16sp"
+                        app:thumbTint="@color/colorSW1"
+                        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+
+                    <Button
+                        android:id="@+id/button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/boton_redondo"
+                        android:backgroundTint="#003b5c"
+                        android:text="Marcar todo como leídas" />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="30dp"
+                        android:background="@drawable/boton_redondo"
+                        android:backgroundTint="#003b5c"
+                        android:onClick="mostrarMenuCompartir"
+                        android:text="Compartir Contenido" />
+
+
+                    <TextView
+                        android:id="@+id/info1"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:layout_marginTop="26dp"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:text="Notificacion 1"
+                        android:textColor="#C5DCE8"
+                        android:textSize="14sp"
+                        android:background="@drawable/boton_redondo"
+                        app:drawableLeftCompat="@android:drawable/ic_menu_recent_history" />
+
+                    <TextView
+                        android:id="@+id/info2"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:layout_marginTop="26dp"
+                        android:background="@drawable/boton_redondo"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:text="Notificacion 1"
+                        android:textColor="#C5DCE8"
+                        android:textSize="14sp"
+                        app:drawableLeftCompat="@android:drawable/ic_menu_recent_history" />
+
+                    <TextView
+                        android:id="@+id/info3"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:layout_marginTop="26dp"
+                        android:background="@drawable/boton_redondo"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:text="Notificacion 1"
+                        android:textColor="#C5DCE8"
+                        android:textSize="14sp"
+                        app:drawableLeftCompat="@android:drawable/ic_menu_recent_history" />
+
+                    <TextView
+                        android:id="@+id/info4"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:layout_marginTop="26dp"
+                        android:background="@drawable/boton_redondo"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:text="Notificacion 1"
+                        android:textColor="#C5DCE8"
+                        android:textSize="14sp"
+                        app:drawableLeftCompat="@android:drawable/ic_menu_recent_history" />
+
+                    <TextView
+                        android:id="@+id/info5"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:layout_marginTop="26dp"
+                        android:background="@drawable/boton_redondo"
+                        android:paddingStart="15dp"
+                        android:paddingTop="10dp"
+                        android:text="Notificacion 1"
+                        android:textColor="#C5DCE8"
+                        android:textSize="14sp"
+                        app:drawableLeftCompat="@android:drawable/ic_menu_recent_history" />
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginBottom="60dp"
+                        android:background="@drawable/boton_redondo"
+                        android:backgroundTint="#003b5c"
+                        android:text="Volver al inicio"
+                        android:onClick="Volver"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

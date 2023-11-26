@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/opcion_compartir_facebook"
+        android:title="Compartir en Facebook" />
+    <item
+        android:id="@+id/opcion_compartir_twitter"
+        android:title="Compartir en Twitter" />
+
+</menu>
